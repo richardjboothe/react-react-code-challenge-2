@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './styles.less';
+import './styles.scss';
 
 const propTypes = {
   number: PropTypes.number,

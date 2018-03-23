@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { devToolsEnhancer } from 'redux-devtools-extension';
 import rootReducer from 'store/features/reducers'
-import './src/index.less';
+import './src/index.scss';
 import App from 'components/App';
 
 /*

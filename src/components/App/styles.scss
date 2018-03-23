@@ -1,0 +1,54 @@
+.app {
+  &__header {
+    background-color: #7c7c7c;
+    display: flex;
+  }
+
+  &__header-title {
+    display: flex;
+    justify-content: center;
+    width: 16rem;
+    font-size: 2.4rem;
+  }
+
+  &__nav-wrapper {
+    display: flex;
+    justify-content: center;
+    width: calc(100vw - 32rem)
+  }
+
+  &__header-nav {
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav-link {
+    font-size: 1.6rem;
+  }
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 768px) {
+  .app {
+    &__header {
+      flex-direction: column;
+      padding: .8rem;
+    }
+
+    &__header-title {
+      width: 100%;
+      font-size: 1.6rem;
+    }
+
+    &__nav-wrapper {
+      width: 100%;
+    }
+
+    &__nav-link {
+      font-size: 1.2rem;
+    }
+  }
+}
