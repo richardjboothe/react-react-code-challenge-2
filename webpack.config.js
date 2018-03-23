@@ -34,12 +34,13 @@ module.exports = {
         options: {
           presets: [
             'react',
-            'env'
+            'env',
+            'stage-2'
           ]
         }
       },
       {
-        test: /\.(css|less)$/,
+        test: /\.(css|scss)$/,
         use: [
           'style-loader',
           {
@@ -49,7 +50,7 @@ module.exports = {
             }
           },
           {
-            loader: 'less-loader',
+            loader: 'sass-loader',
             options: {
               sourceMap: true
             }
@@ -69,8 +70,8 @@ module.exports = {
       debug: false,
       noInfo: true,
       options: {
-        lessLoader: {
-          includePaths: [path.resolve(__dirname, 'src', 'less')],
+        sassLoader: {
+          includePaths: [path.resolve(__dirname, 'src', 'scss')],
         },
         context: '/',
       },

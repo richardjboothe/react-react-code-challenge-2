@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import HomePage from 'containers/HomePage';
 import DetailsPage from 'components/DetailsPage';
 import NumberPage from 'containers/NumberPage';
-import './styles.less';
+import './styles.scss';
 
 class App extends Component {
   render() {

@@ -1,11 +1,10 @@
 import { connect } from 'react-redux';
 import HomePage from 'components/HomePage';
-import actions from 'store/features/clickCounter/actions'
+import actions from 'store/features/companies/actions'
 
 const mapDispatchToProps = dispatch => ({
-	increment: () => dispatch(actions.incrementBy1()),
-	decrement: () => dispatch(actions.decrementBy1()),
-	resetNumberToZero: () => dispatch(actions.resetNumberToZero()),
+	addEmployer: (employerInfo) => dispatch(actions.addEmployer(employerInfo)),
+	addEmployee: (employeeInfo) => dispatch(actions.addEmployee(employeeInfo))
 });
 
 export default connect(null, mapDispatchToProps)(HomePage);

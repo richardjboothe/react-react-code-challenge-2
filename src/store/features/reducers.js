@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
 import clickCounter from './clickCounter/reducers';
+import companies from './companies/reducer';
 
 const rootReducer = combineReducers({
-  clickCounter,
+  companies
 });
 export default rootReducer;
